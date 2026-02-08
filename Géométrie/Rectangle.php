@@ -1,4 +1,8 @@
 <?php
-class Rectangle extends Forme{
-
+class Rectangle extends Forme
+{
+    public function calculerAire()
+    {
+    return $this->longeur*$this->largeur;
+    }
 }
