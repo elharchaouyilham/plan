@@ -42,7 +42,7 @@ INSERT into Auteurs ( nom, nationalité)values ('Autheur1','marocain'),
  from Auteurs 
  inner join livres on Auteurs.id=livres.auteur_id ;
  select avg(prix) from livres ;
- select Autheurs.nom , count(id.livres) from Auteurs
+ select Autheurs.nom,livres.titre , count(id.livres) from Auteurs
  join livres on Auteurs.id=livres.auteur_id  group by livres.titre;
 select * from livres where titre like '%Programation%';
 
@@ -62,5 +62,6 @@ WHEN prix>50 THEN 'cher'
 ELSE 'Abordable'
 FROM livres;
 
-select nom from livres order by prix limit 3 ;
+select nom from livres order by prix limit 3 OFFSET 0;
+
 
