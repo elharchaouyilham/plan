@@ -19,7 +19,7 @@ alter TABLE livres MODIFY COLUMN titre text;
 
 DROP TABLE Auteurs;
 TRUNCATE table livres;
-INSERT into livres (titre ,prix ,date_publication, auteur_id)values ('livre1',34.43,'23/5/2022',3),
+INSERT into livres (titre ,prix ,date_publication, auteur_id)values ('livre1',34.43, '2022-05-23',2),
 ('livre2',34.43, '2022-05-23',2),
 ('livre3',34.43, '2021-05-23',2),
 ('livre4',34.43, '2023-05-23',1),
